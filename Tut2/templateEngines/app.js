@@ -14,7 +14,8 @@ app.get('/contact', function(req, res) {
 app.get('/profile/:nume', function(req, res) {
   var data = {
     age: 33,
-    job: 'Ninja'
+    job: 'Ninja',
+    hobbies: ['eating', 'fishing', 'fighting']
   }
   res.render('profile', {person: req.params.nume, data: data});
 });

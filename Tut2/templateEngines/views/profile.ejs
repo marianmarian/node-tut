@@ -9,5 +9,11 @@
     <p>Aceasta este pagina de web a lui <%= person %></p>
     <p><strong>Age: </strong><%= data.age %></p>
     <p><strong>Job: </strong><%= data.job %></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <% data.hobbies.forEach(function(elem) { %>
+        <li><%= elem %></li>
+      <% }); %>
+    </ul>
   </body>
 </html>
